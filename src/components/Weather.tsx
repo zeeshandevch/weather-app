@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react'
+import {useState } from 'react'
 import './Weather.css'
 import search_icon from '../assets/search.png'
 import clear_icon from '../assets/clear.png'
@@ -76,10 +76,6 @@ const Weather = () => {
       alert(e);
     }
   }
-
-  useEffect(() => {
-    // search("London");
-  }, [])
 
   const handleSearch = () => {
     if (city.trim()) {
